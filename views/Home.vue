@@ -1,5 +1,6 @@
 <template>
   <div id="Home">
+    <Breadcrumb />
     <Users/>
   </div>
 </template>
@@ -7,18 +8,19 @@
 <script>
 
 import Users from '../components/Users'
+import Breadcrumb from '../components/layout/breadcrumb'
 
 export default {
   name: 'Home',
   components: {
     Users,
+    Breadcrumb,
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -1,7 +1,7 @@
 <template>
-  <div id="allposts">
+  <div id="users">
     <Breadcrumb />
-      <AllPosts />
+      <Users />
 </div>
 
 
@@ -11,13 +11,13 @@
 
 <script>
 
-import AllPosts from '../components/AllPosts.vue'
+import Users from '../components/Users.vue'
 import Breadcrumb from '../components/layout/breadcrumb'
 
 export default {
-  name: 'allposts',
+  name: 'allusers',
   components: {
-    AllPosts,
+    Users,
     Breadcrumb,
   },
 }

@@ -48,13 +48,13 @@ export default {
 <style>
 #mainPostCard{
   margin: auto;
-  background-color: white;
   height: 900px;
   width: 1000px;
   border-radius: .25rem;
   background-color: #fff;
   border: 1px solid #d8dbe0;
   margin-top: 10px;
+  color: black;
 }
 hr{
   margin-top: 20px;

@@ -1,6 +1,6 @@
 <template>
-  <CNavbar sticky=sticky expandable="md" type="dark" color="primary">
-    <router-link :to="{ name: 'Home'}"><CNavbarBrand>Straker Stories</CNavbarBrand></router-link>
+  <CNavbar id="Navbar" sticky=sticky expandable="md" type="dark" color="primary">
+    <router-link :to="{ name: 'Home'}"><CNavbarBrand><h3 id="title">TechPost</h3></CNavbarBrand></router-link>
     <CCollapse :show="collapsed" navbar>
       <CNavbarNav>
         <router-link :to="{ name: 'AllPosts'}"><CNavItem>All Posts</CNavItem></router-link>
@@ -26,5 +26,10 @@ export default {
 </script>
 
 <style scoped>
-
+#Navbar{
+    box-shadow: 2px 0px 2px #ccc;
+}
+#title{
+  text-decoration: bold;
+}
 </style>

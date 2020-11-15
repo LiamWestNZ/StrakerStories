@@ -1,18 +1,30 @@
 <template>
   <div id="app">
-    <Header/>
-    <router-view/>
+    <Container>
+      <Header/>
+        <Content>
+          <router-view/>
+        </Content>
+      <Icons />
+    </Container>
   </div>
+  
 </template>
 
 
 <script>
 
 import Header from './components/layout/Header'
+import Content from './components/layout/Content'
+import Icons from './components/layout/Icons'
+import Container from './components/layout/Container'
 export default {
   name:'app',
   components: {
     Header,
+    Content,
+    Icons,
+    Container,
   }
 }
 </script>
@@ -22,10 +34,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  background-color: grey;
-  height: 300%;
-  width: 100%;
+
 }
 
 </style>
